@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <!-- Style Link -->
+  <link rel="stylesheet" href="./css/styles.css">
+
+  <!-- Rubik Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | Time tracking dashboard</title>
+
+  <!-- Time tracking logic -->
+  <script defer src="index.js"></script>
+  
+</head>
+<body>
+
+  <main>
+
+    <section id="dashboard">
+
+      <!-- User Section -->
+      <div id="userCard" class="card">
+
+        <div id="userProfile" class="card">
+          <img src="./images/image-jeremy.png" alt="Jeremy Robson" id="userImage">
+          <div id="userName">
+            <h1>Jeremy Robson</h1>
+            <p>Report for</p>
+          </div>
+        </div>
+
+        <div id="timeSelector">
+          <ul>
+            <li id="dailySelector" class="time-option active" data-timeframe="daily">Daily</li>
+            <li id="weeklySelector" class="time-option" data-timeframe="weekly">Weekly</li>
+            <li id="monthlySelector" class="time-option" data-timeframe="monthly">Monthly</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Cards populated from data.json go here-->
+      <!-- End of cards -->
+
+    </section>
+
+  </main>
+
+</body>
+</html>
